@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gergely Meszaros / Greg - CV 2025</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+</head>
+
+<body>
+    <!-- Loading Screen -->
+    <div id="loadingScreen" class="loading-screen">
+        <div class="loading-content">
+            <div class="spinner"></div>
+            <p class="loading-text">Loading CV...</p>
+        </div>
+    </div>
+
+    <!-- Download PDF Button -->
+    <div class="download-container">
+        <button id="downloadPdf" class="download-btn">
+            <svg class="download-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="7,10 12,15 17,10"></polyline>
+                <line x1="12" y1="15" x2="12" y2="3"></line>
+            </svg>
+            Download PDF
+        </button>
+    </div>
+
+    <div id="page">
+        <div class="photo-and-name">
+            <img src="gm.jpeg" class="photo" alt="Profile Picture">
+            <div class="contact-info-box">
+                <h1 class="name">Gergely Meszaros (Greg)</h1>
+                <br>
+                <h3 class="job-title">Senior Solutions Architect</h3>
+                <br />
+                <div class="contact-details">
+                    <table>
+                        <tr>
+                            <td>Phone</td>
+                            <td>Email</td>
+                        </tr>
+                        <tr>
+                            <td><b>+44 7534 55 99 79</b></td>
+                            <td>
+                                <b>
+                                    <a href="mailto:meszaros275@gmail.com">meszaros275@gmail.com</a>
+                                </b>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div id="card" class="card">
+            <h3>Summary</h3>
+            <p>
+                Experienced Cloud SRE and Solutions Architect with 10+ years of expertise in building secure, scalable, and resilient infrastructure across Azure, AWS, GCP, and IBM Cloud.
+                <br />
+                Proven track record in leading Site Reliability Engineering initiatives, designing enterprise observability platforms, and automating operational workflows using Infrastructure-as-Code (Terraform, Helm, Ansible) and modern CI/CD pipelines (Azure DevOps, GitHub Actions, GitLab, Jenkins).
+                <br /><br />
+                A trusted advisor with a proven track record of working with enterprise customers through complex cloud
+                transformations, securing cloud workloads, and accelerating DevSecOps adoption.
+                <br />
+                Also experienced in post-sales implementation, technical delivery, and stakeholder engagement across
+                cross-functional teams.
+                <br />
+                Strong focus on cloud security, automation and platform reliability.
+            </p>
+        </div>
+
+        <div id="card" class="card">
+            <h3>Key Skills</h3>
+            <ul class="skills-list">
+                <li>TypeScript, JavaScript, Node.js, Solidity, Python, Bash, PowerShell, Java, Scala, PHP</li>
+                <li>AWS, Azure, GCP, IBM Cloud</li>
+                <li>Infrastructure as Code: Terraform, Ansible, Helm, CloudFormation</li>
+                <li>CI/CD Tools: Jenkins, ArgoCD, Azure Pipelines, GitOps</li>
+                <li>Observability Tools: Prometheus, Grafana, ELK Stack (Elasticsearch, Kibana, Logstash)</li>
+                <li>Containerisation: Docker, Kubernetes, Red Hat OpenShift, Rancher</li>
+                <li>Cloud Security: CSPM (Cloud Security Posture Management), CNAPP, IAM hardening, least privilege principles</li>
+                <li>Secrets Management: HashiCorp Vault, AWS Secrets Manager</li>
+                <li>Also Experienced with: HAProxy, Redis, Nginx</li>
+            </ul>
+        </div>
+
+        <div id="card" class="card">
+            <h3>Experience</h3>
+            <table class="experience-table">
+                <tr>
+                    <td class="date-cell">Dec 2024 - Present</td>
+                    <td class="content-cell"><b>Snyk (snyk.io) - Senior Solutions Architect</b>
+                        <ul class="experience-list">
+                            <li>
+                                Strategic enterprise clients (>$1M ARR), focusing on CI/CD security integrations, secure pipeline design, and vulnerability management at scale.
+                            </li>
+                            <li>Delivered multiple POCs, architecture reviews, and onboarding sessions to improve code-to-cloud visibility.</li>
+                            <li>Discovery workshops, solution design + architecture.</li>
+                            <li>
+                                Working across pre-sales and post-sales to drive adoption of developer-first security tooling.
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="date-cell">Mar 2020 - Nov 2024</td>
+                    <td class="content-cell"><b>IBM - Automation Architect / Cloud Platform Engineer</b>
+                        <ul class="experience-list">
+                            <li>
+                                Adoption and scaling of IBM's Growth Offerings on Red Hat OpenShift, working with key
+                                Tier 1 financial/banking customers.
+                            </li>
+                            <li>
+                                Led architectural design and development of minimum viable products (MVPs) and proof of
+                                concepts (POCs), using hybrid cloud and AI technologies.
+                            </li>
+                            <li>
+                                Built different automation tools to streamline platform management, reducing operational
+                                friction by 30%.
+                            </li>
+                            <li>
+                                Played a key role in securing client infrastructure using Kubernetes, Terraform, and
+                                Ansible, deploying multi-region, resilient service platforms.
+                            </li>
+                            <li>
+                                Mentored junior engineers, focusing on best practices in CI/CD, monitoring, and
+                                security.
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="date-cell">Jul 2019 - Feb 2020 <br />(contract)
+                    </td>
+                    <td class="content-cell"><b>Free2 Limited (startup) - Technical Lead / Architect</b>
+                        <ul class="experience-list">
+                            <li>
+                                Led the architecture and delivery of new product MVP until product launch + implementing
+                                CI/CD pipelines on Azure Kubernetes Service.
+                            </li>
+                            <li>
+                                Championed SRE best practices, enabling smoother incident response and change control processes.
+                            </li>
+                            <li>
+                                Managed the migration of the platform to cloud infrastructure, increasing deployment
+                                speed and day to day operational effectiveness.
+                            </li>
+                            <li>
+                                Mentored and scaled the engineering team, promoting a culture of automation and
+                                innovation.
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="date-cell">Oct 2017 – Jun 2019</td>
+                    <td class="content-cell"><b>Haymarket Media Group - Technical Lead</b>
+                        <ul class="experience-list">
+                            <li>
+                                Delivery of new product features based on the product roadmap and overall strategy.
+                            </li>
+                            <li>
+                                Managed the migration of workloads to AWS, setting up serverless applications using AWS
+                                Gateway and Lambda functions.
+                            </li>
+                            <li>
+                                Led code delivery and quality assurance for multiple online brands including
+                                <br />Stuff.tv,
+                                What
+                                Hi-Fi(www.whathifi.com), FourFourTwo(fourfourtwo.com), and Autocar.co.uk.
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="date-cell">Jan 2016 – Oct 2017</td>
+                    <td class="content-cell"><b>TES Global Limited - Software Engineer</b>
+                        <ul class="experience-list">
+                            <li>
+                                Contributed to high-traffic websites like TimesHigherEducation.com and TES.com,
+                                supporting over 7 million registered users.
+                            </li>
+                            <li>
+                                Backend/API development + Drupal 8 migration for VisionForEducation.co.uk.
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="date-cell">Oct 2014 – Dec 2015</td>
+                    <td class="content-cell"><b>Compucorp - Technical Lead</b>
+                        <ul class="experience-list">
+                            <li>
+                                Technical lead for the CiviHR project - civihr.org.
+                            </li>
+                            <li>
+                                Responsible for setting up the environment for automated deployments and testing.
+                            </li>
+                            <li>
+                                Responsible for managing outsourced teams in Poland, Romania and India.
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="date-cell">Mar 2012 – Sep 2014</td>
+                    <td class="content-cell"><b>Collinson Group - Technical Lead / Senior Developer</b>
+                        <ul class="experience-list">
+                            <li>
+                                Developed a loyalty platform running on Drupal 7, including a custom loyalty points
+                                management system for Intel®, L'Oreal, and IHG® Rewards.
+                            </li>
+                            <li>
+                                Daily tasks: module development, cache and performance optimisation of the backend APIs.
+                            </li>
+                            <li>
+                                Code reviews for the outsourced team of Drupal developers.
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="card" class="card">
+            <h3>Education</h3>
+            <table class="education-table">
+                <tr>
+                    <td class="date-cell">Mar 2022 – Jul 2023</td>
+                    <td class="content-cell"><b>Executive MBA</b> <br /> Quantic School of Business and
+                        Technology (USA - remote)</td>
+                </tr>
+                <tr>
+                    <td class="date-cell">2007 - 2010</td>
+                    <td class="content-cell"><b>Undergraduate Degree in Computer Science</b> <br /> Brno
+                        University of Technology (CZ)</td>
+                </tr>
+
+            </table>
+        </div>
+
+        <div id="card" class="card">
+            <h3>Certifications</h3>
+            <table class="certifications-table">
+                <tr>
+                    <td class="date-cell">2025</td>
+                    <td class="content-cell"><b>Snyk Certified Professional</b></td>
+                </tr>
+                <tr>
+                    <td class="date-cell">2023 - 2027</td>
+                    <td class="content-cell"><b>IBM SRE - Experienced</b></td>
+                </tr>
+                <tr>
+                    <td class="date-cell">2022 - 2025</td>
+                    <td class="content-cell"><b>FinOps Certified Practitioner - Linux Foundation</b></td>
+                </tr>
+                <tr>
+                    <td class="date-cell">2020 - 2023</td>
+                    <td class="content-cell"><b>Red Hat Certified Specialist in OpenShift Administration</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="date-cell">2018 (lapsed)</td>
+                    <td class="content-cell"><b>AWS Certified Developer - Associate</b></td>
+                </tr>
+
+            </table>
+        </div>
+
+        <div id="card" class="card">
+            <h3>Personal Details</h3>
+            <table class="personal-table">
+                <tr>
+                    <td class="label-cell">Location</td>
+                    <td class="content-cell"><b>London (UK)</b></td>
+                </tr>
+                <tr>
+                    <td class="label-cell">Date of Birth:</td>
+                    <td class="content-cell"><b>26<sup>th</sup> September 1988</b></td>
+                </tr>
+                <tr>
+                    <td class="label-cell">LinkedIn:</td>
+                    <td class="content-cell">
+                        <b>
+                            <a class="a-black" href="https://www.linkedin.com/in/gregmeszaros"
+                                target="_blank">https://www.linkedin.com/in/gregmeszaros</a>
+                        </b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="label-cell">GitHub:</td>
+                    <td class="content-cell">
+                        <b>
+                            <a class="a-black" href="https://github.com/gregmeszaros"
+                                target="_blank">https://github.com/gregmeszaros</a>
+                        </b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="label-cell">Nationality:</td>
+                    <td class="content-cell"><b>EU/UK</b></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        // Loading screen management
+        window.addEventListener('load', function() {
+            setTimeout(function() {
+                const loadingScreen = document.getElementById('loadingScreen');
+                if (loadingScreen) {
+                    loadingScreen.style.opacity = '0';
+                    setTimeout(function() {
+                        loadingScreen.style.display = 'none';
+                    }, 500);
+                }
+            }, 1500);
+        });
+
+        // Enhanced line highlight effects
+        document.addEventListener('DOMContentLoaded', function() {
+            // Table row highlight effects
+            const tableRows = document.querySelectorAll('tr');
+            
+            tableRows.forEach(row => {
+                row.addEventListener('mouseenter', function() {
+                    this.style.backgroundColor = '#f8fafc';
+                    this.style.transform = 'translateX(5px)';
+                    this.style.transition = 'all 0.3s ease';
+                });
+                
+                row.addEventListener('mouseleave', function() {
+                    this.style.backgroundColor = '';
+                    this.style.transform = 'translateX(0)';
+                });
+            });
+
+            // List item highlight effects
+            const listItems = document.querySelectorAll('li');
+            
+            listItems.forEach(item => {
+                item.addEventListener('mouseenter', function() {
+                    this.style.backgroundColor = '#f8fafc';
+                    this.style.paddingLeft = '25px';
+                    this.style.transition = 'all 0.3s ease';
+                });
+                
+                item.addEventListener('mouseleave', function() {
+                    this.style.backgroundColor = '';
+                    this.style.paddingLeft = '';
+                });
+            });
+
+            // Card hover effects
+            const cards = document.querySelectorAll('.card');
+            
+            cards.forEach(card => {
+                card.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-5px)';
+                    this.style.boxShadow = '0 12px 30px rgba(0, 0, 0, 0.15)';
+                });
+                
+                card.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateY(-2px)';
+                    this.style.boxShadow = '0 8px 25px rgba(0, 0, 0, 0.1)';
+                });
+            });
+
+            // Photo hover effect
+            const photo = document.querySelector('.photo');
+            if (photo) {
+                photo.addEventListener('mouseenter', function() {
+                    this.style.transform = 'scale(1.05) rotate(2deg)';
+                });
+                
+                photo.addEventListener('mouseleave', function() {
+                    this.style.transform = 'scale(1.05)';
+                });
+            }
+
+            // Contact details hover effect
+            const contactDetails = document.querySelector('.contact-details');
+            if (contactDetails) {
+                contactDetails.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-3px)';
+                });
+                
+                contactDetails.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateY(-2px)';
+                });
+            }
+
+            // Smooth scroll for anchor links
+            const links = document.querySelectorAll('a[href^="#"]');
+            links.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+
+            // Add typing effect to job title
+            const jobTitle = document.querySelector('.job-title');
+            if (jobTitle) {
+                const originalText = jobTitle.textContent;
+                jobTitle.textContent = '';
+                jobTitle.style.borderRight = '2px solid #3b82f6';
+                
+                let i = 0;
+                const typeWriter = () => {
+                    if (i < originalText.length) {
+                        jobTitle.textContent += originalText.charAt(i);
+                        i++;
+                        setTimeout(typeWriter, 100);
+                    } else {
+                        // Remove cursor after typing is complete
+                        setTimeout(() => {
+                            jobTitle.style.borderRight = 'none';
+                        }, 1000);
+                    }
+                };
+                
+                // Start typing after loading screen is hidden
+                setTimeout(typeWriter, 2000);
+            }
+
+            // Add intersection observer for scroll animations
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, observerOptions);
+
+            // Observe cards for scroll animations
+            cards.forEach(card => {
+                observer.observe(card);
+            });
+        });
+
+        // Performance optimization: Throttle scroll events
+        function throttle(func, limit) {
+            let inThrottle;
+            return function() {
+                const args = arguments;
+                const context = this;
+                if (!inThrottle) {
+                    func.apply(context, args);
+                    inThrottle = true;
+                    setTimeout(() => inThrottle = false, limit);
+                }
+            }
+        }
+
+        // Optimized scroll handler
+        const optimizedScrollHandler = throttle(() => {
+            // Add any scroll-based effects here if needed
+        }, 16);
+
+        window.addEventListener('scroll', optimizedScrollHandler);
+
+        // PDF Download functionality
+        document.getElementById('downloadPdf').addEventListener('click', function() {
+            // Show loading state
+            const originalText = this.innerHTML;
+            this.innerHTML = `
+                <svg class="download-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polyline points="12,6 12,12 16,12"></polyline>
+                </svg>
+                Generating PDF...
+            `;
+            this.disabled = true;
+
+            // Configure PDF options
+            const opt = {
+                margin: [10, 10, 10, 10],
+                filename: 'Gergely_Meszaros_CV_2024.pdf',
+                image: { type: 'jpeg', quality: 0.98 },
+                html2canvas: { 
+                    scale: 2,
+                    useCORS: true,
+                    allowTaint: true,
+                    backgroundColor: '#ffffff'
+                },
+                jsPDF: { 
+                    unit: 'mm', 
+                    format: 'a4', 
+                    orientation: 'portrait' 
+                }
+            };
+
+            // Generate PDF
+            html2pdf().set(opt).from(document.getElementById('page')).save().then(() => {
+                // Restore button state
+                this.innerHTML = originalText;
+                this.disabled = false;
+                
+                // Show success message
+                showNotification('PDF downloaded successfully!', 'success');
+            }).catch(err => {
+                console.error('PDF generation failed:', err);
+                
+                // Restore button state
+                this.innerHTML = originalText;
+                this.disabled = false;
+                
+                // Show error message
+                showNotification('PDF generation failed. Please try again.', 'error');
+            });
+        });
+
+        // Notification system
+        function showNotification(message, type = 'info') {
+            const notification = document.createElement('div');
+            notification.className = `notification notification-${type}`;
+            notification.innerHTML = `
+                <div class="notification-content">
+                    <span>${message}</span>
+                    <button class="notification-close">&times;</button>
+                </div>
+            `;
+            
+            // Add styles
+            notification.style.cssText = `
+                position: fixed;
+                top: 20px;
+                left: 50%;
+                transform: translateX(-50%);
+                background: ${type === 'success' ? '#10b981' : type === 'error' ? '#ef4444' : '#3b82f6'};
+                color: white;
+                padding: 12px 20px;
+                border-radius: 8px;
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+                z-index: 10000;
+                font-family: 'Inter', sans-serif;
+                font-size: 14px;
+                opacity: 0;
+                transform: translateY(-20px);
+                transition: all 0.3s ease;
+            `;
+            
+            document.body.appendChild(notification);
+            
+            // Animate in
+            setTimeout(() => {
+                notification.style.opacity = '1';
+                notification.style.transform = 'translateX(-50%) translateY(0)';
+            }, 100);
+            
+            // Auto remove after 3 seconds
+            setTimeout(() => {
+                notification.style.opacity = '0';
+                notification.style.transform = 'translateX(-50%) translateY(-20px)';
+                setTimeout(() => {
+                    if (notification.parentNode) {
+                        notification.parentNode.removeChild(notification);
+                    }
+                }, 300);
+            }, 3000);
+            
+            // Close button functionality
+            const closeBtn = notification.querySelector('.notification-close');
+            closeBtn.addEventListener('click', () => {
+                notification.style.opacity = '0';
+                notification.style.transform = 'translateX(-50%) translateY(-20px)';
+                setTimeout(() => {
+                    if (notification.parentNode) {
+                        notification.parentNode.removeChild(notification);
+                    }
+                }, 300);
+            });
+        }
+    </script>
+</body>
+
+</html>
