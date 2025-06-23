@@ -625,133 +625,6 @@ button:focus {
     outline-offset: 2px;
 }
 
-/* Print styles */
-@media print {
-
-    /* --- Universal Style Reset for Print --- */
-    /* Force black text and transparent background on ALL elements */
-    * {
-        background: transparent !important;
-        color: #000000 !important;
-        box-shadow: none !important;
-        text-shadow: none !important;
-    }
-
-    /* --- General Print Resets --- */
-    body {
-        background: #ffffff !important;
-        color: #000000 !important;
-        font-family: Arial, sans-serif !important;
-        font-size: 10pt;
-        line-height: 1.3;
-    }
-
-    /* --- Hide Unnecessary Elements --- */
-    .loading-screen,
-    .download-container {
-        display: none !important;
-    }
-
-    /* --- Page Layout --- */
-    #page {
-        box-shadow: none !important;
-        margin: 20mm 15mm !important;
-        /* Standard print margins */
-        padding: 0 !important;
-        max-width: 100% !important;
-        border-radius: 0 !important;
-        border: none !important;
-    }
-
-    /* --- Remove Interactive Styles & Animations --- */
-    * {
-        transition: none !important;
-        animation: none !important;
-    }
-
-    .card:hover,
-    .photo:hover,
-    .contact-details:hover,
-    .skills-list li:hover,
-    .experience-table tr:hover,
-    .a-black:hover {
-        transform: none !important;
-        box-shadow: none !important;
-    }
-
-    /* --- Content Readability --- */
-    .name {
-        color: #000000 !important;
-        background: none !important;
-        -webkit-text-fill-color: #000000 !important;
-    }
-
-    .contact-details {
-        background: #f0f0f0 !important;
-        color: #000000 !important;
-    }
-
-    .contact-details a,
-    a:link,
-    a:visited {
-        color: #0000ff !important;
-        text-decoration: underline;
-    }
-
-    .card,
-    .card h3 {
-        border-color: #dddddd !important;
-    }
-
-    /* --- Page Break Control --- */
-    .card,
-    table,
-    .photo-and-name {
-        page-break-inside: avoid;
-    }
-
-    h3 {
-        page-break-after: avoid;
-    }
-
-    .experience-table tr {
-        page-break-inside: avoid;
-    }
-
-    /* --- Link Visibility --- */
-    a[href]::after {
-        content: " (" attr(href) ")";
-        font-size: 9pt;
-        color: #555555;
-    }
-
-    /* Don't show for mailto or internal links */
-    a[href^="mailto:"]::after,
-    a[href^="#"]::after {
-        content: "";
-    }
-
-    .photo,
-    .photo-and-name a {
-        text-decoration: none;
-        /* Avoid underlining image links */
-    }
-
-    .photo-and-name a::after {
-        content: "" !important;
-        /* Clean up contact links */
-    }
-
-    /* --- Cleanup Decorative Elements --- */
-    .card::before,
-    .card h3::after,
-    .skills-list li::before,
-    .experience-table tr::after,
-    .a-black::after {
-        display: none !important;
-    }
-}
-
 /* Performance optimizations */
 @media (prefers-reduced-motion: reduce) {
     * {
@@ -827,4 +700,10 @@ button:focus {
 .download-btn:disabled:hover {
     transform: none !important;
     box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+}
+
+@media print {
+    .download-container {
+        display: none !important;
+    }
 }
