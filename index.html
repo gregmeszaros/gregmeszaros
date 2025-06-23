@@ -7,7 +7,6 @@
     <title>Gergely Meszaros / Greg - CV 2025</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
 </head>
 
 <body>
@@ -486,61 +485,9 @@
 
         window.addEventListener('scroll', optimizedScrollHandler);
 
-        // PDF Download functionality
+        // Print as PDF functionality
         document.getElementById('downloadPdf').addEventListener('click', function () {
-            // Force hide the loading screen to ensure it's not in the PDF
-            const loadingScreen = document.getElementById('loadingScreen');
-            if (loadingScreen) {
-                loadingScreen.style.display = 'none';
-            }
-
-            // Show loading state
-            const originalText = this.innerHTML;
-            this.innerHTML = `
-                <svg class="download-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <circle cx="12" cy="12" r="10"></circle>
-                    <polyline points="12,6 12,12 16,12"></polyline>
-                </svg>
-                Generating PDF...
-            `;
-            this.disabled = true;
-
-            // Configure PDF options
-            const opt = {
-                margin: [0, 0, 0, 0], // Margins are controlled by CSS @page
-                filename: 'Gergely_Meszaros_CV_2025.pdf',
-                image: { type: 'jpeg', quality: 0.98 },
-                html2canvas: {
-                    scale: 2,
-                    useCORS: true, // Important for external images
-                    allowTaint: false, // Prevents tainted canvas error
-                    backgroundColor: '#ffffff'
-                },
-                jsPDF: {
-                    unit: 'mm',
-                    format: 'a4',
-                    orientation: 'portrait'
-                }
-            };
-
-            // Generate PDF
-            html2pdf().set(opt).from(document.getElementById('page')).save().then(() => {
-                // Restore button state
-                this.innerHTML = originalText;
-                this.disabled = false;
-
-                // Show success message
-                showNotification('PDF downloaded successfully!', 'success');
-            }).catch(err => {
-                console.error('PDF generation failed:', err);
-
-                // Restore button state
-                this.innerHTML = originalText;
-                this.disabled = false;
-
-                // Show error message
-                showNotification('PDF generation failed. Please try again.', 'error');
-            });
+            window.print();
         });
 
         // Notification system
