@@ -722,4 +722,16 @@ button:focus {
     .download-container {
         display: none !important;
     }
+
+    /* Cards only break to a new page if they don't fit */
+    #card {
+        break-inside: avoid;
+        page-break-inside: avoid;
+    }
+
+    /* Use a fixed, readable font size for print */
+    #page,
+    #page * {
+        font-size: 9pt !important;
+    }
 }
