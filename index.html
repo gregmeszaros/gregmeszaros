@@ -60,9 +60,12 @@
         <div id="card" class="card">
             <h3>Summary</h3>
             <p>
-                Experienced Cloud SRE and Solutions Architect with 10+ years of expertise in building secure, scalable, and resilient infrastructure across Azure, AWS, GCP, and IBM Cloud.
+                Experienced Cloud SRE and Solutions Architect with 10+ years of expertise in building secure, scalable,
+                and resilient infrastructure across Azure, AWS, GCP, and IBM Cloud.
                 <br />
-                Proven track record in leading Site Reliability Engineering initiatives, designing enterprise observability platforms, and automating operational workflows using Infrastructure-as-Code (Terraform, Helm, Ansible) and modern CI/CD pipelines (Azure DevOps, GitHub Actions, GitLab, Jenkins).
+                Proven track record in leading Site Reliability Engineering initiatives, designing enterprise
+                observability platforms, and automating operational workflows using Infrastructure-as-Code (Terraform,
+                Helm, Ansible) and modern CI/CD pipelines (Azure DevOps, GitHub Actions, GitLab, Jenkins).
                 <br /><br />
                 A trusted advisor with a proven track record of working with enterprise customers through complex cloud
                 transformations, securing cloud workloads, and accelerating DevSecOps adoption.
@@ -83,7 +86,8 @@
                 <li>CI/CD Tools: Jenkins, ArgoCD, Azure Pipelines, GitOps</li>
                 <li>Observability Tools: Prometheus, Grafana, ELK Stack (Elasticsearch, Kibana, Logstash)</li>
                 <li>Containerisation: Docker, Kubernetes, Red Hat OpenShift, Rancher</li>
-                <li>Cloud Security: CSPM (Cloud Security Posture Management), CNAPP, IAM hardening, least privilege principles</li>
+                <li>Cloud Security: CSPM (Cloud Security Posture Management), CNAPP, IAM hardening, least privilege
+                    principles</li>
                 <li>Secrets Management: HashiCorp Vault, AWS Secrets Manager</li>
                 <li>Also Experienced with: HAProxy, Redis, Nginx</li>
             </ul>
@@ -97,12 +101,15 @@
                     <td class="content-cell"><b>Snyk (snyk.io) - Senior Solutions Architect</b>
                         <ul class="experience-list">
                             <li>
-                                Strategic enterprise clients (>$1M ARR), focusing on CI/CD security integrations, secure pipeline design, and vulnerability management at scale.
+                                Strategic enterprise clients (>$1M ARR), focusing on CI/CD security integrations, secure
+                                pipeline design, and vulnerability management at scale.
                             </li>
-                            <li>Delivered multiple POCs, architecture reviews, and onboarding sessions to improve code-to-cloud visibility.</li>
+                            <li>Delivered multiple POCs, architecture reviews, and onboarding sessions to improve
+                                code-to-cloud visibility.</li>
                             <li>Discovery workshops, solution design + architecture.</li>
                             <li>
-                                Working across pre-sales and post-sales to drive adoption of developer-first security tooling.
+                                Working across pre-sales and post-sales to drive adoption of developer-first security
+                                tooling.
                             </li>
                         </ul>
                     </td>
@@ -144,7 +151,8 @@
                                 CI/CD pipelines on Azure Kubernetes Service.
                             </li>
                             <li>
-                                Championed SRE best practices, enabling smoother incident response and change control processes.
+                                Championed SRE best practices, enabling smoother incident response and change control
+                                processes.
                             </li>
                             <li>
                                 Managed the migration of the platform to cloud infrastructure, increasing deployment
@@ -311,12 +319,12 @@
 
     <script>
         // Loading screen management
-        window.addEventListener('load', function() {
-            setTimeout(function() {
+        window.addEventListener('load', function () {
+            setTimeout(function () {
                 const loadingScreen = document.getElementById('loadingScreen');
                 if (loadingScreen) {
                     loadingScreen.style.opacity = '0';
-                    setTimeout(function() {
+                    setTimeout(function () {
                         loadingScreen.style.display = 'none';
                     }, 500);
                 }
@@ -324,18 +332,18 @@
         });
 
         // Enhanced line highlight effects
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             // Table row highlight effects
             const tableRows = document.querySelectorAll('tr');
-            
+
             tableRows.forEach(row => {
-                row.addEventListener('mouseenter', function() {
-                    this.style.backgroundColor = '#f8fafc';
+                row.addEventListener('mouseenter', function () {
+                    //this.style.backgroundColor = '#f8fafc';
                     this.style.transform = 'translateX(5px)';
                     this.style.transition = 'all 0.3s ease';
                 });
-                
-                row.addEventListener('mouseleave', function() {
+
+                row.addEventListener('mouseleave', function () {
                     this.style.backgroundColor = '';
                     this.style.transform = 'translateX(0)';
                 });
@@ -343,15 +351,15 @@
 
             // List item highlight effects
             const listItems = document.querySelectorAll('li');
-            
+
             listItems.forEach(item => {
-                item.addEventListener('mouseenter', function() {
+                item.addEventListener('mouseenter', function () {
                     this.style.backgroundColor = '#f8fafc';
                     this.style.paddingLeft = '25px';
                     this.style.transition = 'all 0.3s ease';
                 });
-                
-                item.addEventListener('mouseleave', function() {
+
+                item.addEventListener('mouseleave', function () {
                     this.style.backgroundColor = '';
                     this.style.paddingLeft = '';
                 });
@@ -359,14 +367,14 @@
 
             // Card hover effects
             const cards = document.querySelectorAll('.card');
-            
+
             cards.forEach(card => {
-                card.addEventListener('mouseenter', function() {
+                card.addEventListener('mouseenter', function () {
                     this.style.transform = 'translateY(-5px)';
                     this.style.boxShadow = '0 12px 30px rgba(0, 0, 0, 0.15)';
                 });
-                
-                card.addEventListener('mouseleave', function() {
+
+                card.addEventListener('mouseleave', function () {
                     this.style.transform = 'translateY(-2px)';
                     this.style.boxShadow = '0 8px 25px rgba(0, 0, 0, 0.1)';
                 });
@@ -375,11 +383,11 @@
             // Photo hover effect
             const photo = document.querySelector('.photo');
             if (photo) {
-                photo.addEventListener('mouseenter', function() {
+                photo.addEventListener('mouseenter', function () {
                     this.style.transform = 'scale(1.05) rotate(2deg)';
                 });
-                
-                photo.addEventListener('mouseleave', function() {
+
+                photo.addEventListener('mouseleave', function () {
                     this.style.transform = 'scale(1.05)';
                 });
             }
@@ -387,11 +395,11 @@
             // Contact details hover effect
             const contactDetails = document.querySelector('.contact-details');
             if (contactDetails) {
-                contactDetails.addEventListener('mouseenter', function() {
+                contactDetails.addEventListener('mouseenter', function () {
                     this.style.transform = 'translateY(-3px)';
                 });
-                
-                contactDetails.addEventListener('mouseleave', function() {
+
+                contactDetails.addEventListener('mouseleave', function () {
                     this.style.transform = 'translateY(-2px)';
                 });
             }
@@ -399,7 +407,7 @@
             // Smooth scroll for anchor links
             const links = document.querySelectorAll('a[href^="#"]');
             links.forEach(link => {
-                link.addEventListener('click', function(e) {
+                link.addEventListener('click', function (e) {
                     e.preventDefault();
                     const target = document.querySelector(this.getAttribute('href'));
                     if (target) {
@@ -417,7 +425,7 @@
                 const originalText = jobTitle.textContent;
                 jobTitle.textContent = '';
                 jobTitle.style.borderRight = '2px solid #3b82f6';
-                
+
                 let i = 0;
                 const typeWriter = () => {
                     if (i < originalText.length) {
@@ -431,7 +439,7 @@
                         }, 1000);
                     }
                 };
-                
+
                 // Start typing after loading screen is hidden
                 setTimeout(typeWriter, 2000);
             }
@@ -460,7 +468,7 @@
         // Performance optimization: Throttle scroll events
         function throttle(func, limit) {
             let inThrottle;
-            return function() {
+            return function () {
                 const args = arguments;
                 const context = this;
                 if (!inThrottle) {
@@ -479,7 +487,13 @@
         window.addEventListener('scroll', optimizedScrollHandler);
 
         // PDF Download functionality
-        document.getElementById('downloadPdf').addEventListener('click', function() {
+        document.getElementById('downloadPdf').addEventListener('click', function () {
+            // Force hide the loading screen to ensure it's not in the PDF
+            const loadingScreen = document.getElementById('loadingScreen');
+            if (loadingScreen) {
+                loadingScreen.style.display = 'none';
+            }
+
             // Show loading state
             const originalText = this.innerHTML;
             this.innerHTML = `
@@ -493,19 +507,19 @@
 
             // Configure PDF options
             const opt = {
-                margin: [10, 10, 10, 10],
-                filename: 'Gergely_Meszaros_CV_2024.pdf',
+                margin: [0, 0, 0, 0], // Margins are controlled by CSS @page
+                filename: 'Gergely_Meszaros_CV_2025.pdf',
                 image: { type: 'jpeg', quality: 0.98 },
-                html2canvas: { 
+                html2canvas: {
                     scale: 2,
-                    useCORS: true,
-                    allowTaint: true,
+                    useCORS: true, // Important for external images
+                    allowTaint: false, // Prevents tainted canvas error
                     backgroundColor: '#ffffff'
                 },
-                jsPDF: { 
-                    unit: 'mm', 
-                    format: 'a4', 
-                    orientation: 'portrait' 
+                jsPDF: {
+                    unit: 'mm',
+                    format: 'a4',
+                    orientation: 'portrait'
                 }
             };
 
@@ -514,16 +528,16 @@
                 // Restore button state
                 this.innerHTML = originalText;
                 this.disabled = false;
-                
+
                 // Show success message
                 showNotification('PDF downloaded successfully!', 'success');
             }).catch(err => {
                 console.error('PDF generation failed:', err);
-                
+
                 // Restore button state
                 this.innerHTML = originalText;
                 this.disabled = false;
-                
+
                 // Show error message
                 showNotification('PDF generation failed. Please try again.', 'error');
             });
@@ -539,7 +553,7 @@
                     <button class="notification-close">&times;</button>
                 </div>
             `;
-            
+
             // Add styles
             notification.style.cssText = `
                 position: fixed;
@@ -558,15 +572,15 @@
                 transform: translateY(-20px);
                 transition: all 0.3s ease;
             `;
-            
+
             document.body.appendChild(notification);
-            
+
             // Animate in
             setTimeout(() => {
                 notification.style.opacity = '1';
                 notification.style.transform = 'translateX(-50%) translateY(0)';
             }, 100);
-            
+
             // Auto remove after 3 seconds
             setTimeout(() => {
                 notification.style.opacity = '0';
@@ -577,7 +591,7 @@
                     }
                 }, 300);
             }, 3000);
-            
+
             // Close button functionality
             const closeBtn = notification.querySelector('.notification-close');
             closeBtn.addEventListener('click', () => {
