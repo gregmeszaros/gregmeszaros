@@ -703,24 +703,17 @@ button:focus {
 }
 
 @media print {
-    body * {
-        visibility: hidden !important;
-    }
 
-    #page,
-    #page * {
-        visibility: visible !important;
-    }
-
-    #page {
-        position: absolute !important;
-        left: 0;
-        top: 0;
-        width: 100% !important;
-    }
-
-    .download-container {
+    /* Hide non-printable elements */
+    .loading-screen,
+    .download-container,
+    .notification {
         display: none !important;
+    }
+
+    /* Remove box shadow from page container */
+    #page {
+        box-shadow: none !important;
     }
 
     /* Cards only break to a new page if they don't fit */
