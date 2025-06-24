@@ -704,6 +704,15 @@ button:focus {
 
 @media print {
 
+    /* Safari print fixes */
+    html,
+    body {
+        background: white !important;
+        color: black !important;
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+    }
+
     /* Hide non-printable elements */
     .loading-screen,
     .download-container,
@@ -714,12 +723,55 @@ button:focus {
     /* Remove box shadow from page container */
     #page {
         box-shadow: none !important;
+        background: white !important;
+        margin: 0 !important;
+        padding: 20px !important;
+    }
+
+    /* Ensure .name is visible and black in print */
+    .name {
+        color: #000 !important;
+        -webkit-text-fill-color: #000 !important;
+        background: none !important;
+        -webkit-background-clip: unset !important;
+        background-clip: unset !important;
+        display: block !important;
+        visibility: visible !important;
+    }
+
+    /* Disable animation for job-title in print */
+    .job-title {
+        animation: none !important;
+        border-right: none !important;
+        overflow: visible !important;
+        white-space: normal !important;
+        color: #000 !important;
+        display: block !important;
+        visibility: visible !important;
+    }
+
+    /* Ensure all text elements are visible */
+    h1,
+    h2,
+    h3,
+    p,
+    li,
+    td,
+    span,
+    div {
+        color: #000 !important;
+        background: transparent !important;
+        display: block !important;
+        visibility: visible !important;
     }
 
     /* Cards only break to a new page if they don't fit */
     #card {
         break-inside: avoid;
         page-break-inside: avoid;
+        background: white !important;
+        display: block !important;
+        visibility: visible !important;
     }
 
     /* Use a fixed, readable font size for print */
