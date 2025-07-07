@@ -765,6 +765,14 @@ button:focus {
         visibility: visible !important;
     }
 
+    h4 {
+        font-size: 12pt !important;
+        font-weight: 600 !important;
+        margin-top: 14px !important;
+        margin-bottom: 6px !important;
+        color: #000 !important;
+    }
+
     /* Cards only break to a new page if they don't fit */
     #card {
         break-inside: avoid;
@@ -779,4 +787,33 @@ button:focus {
     #page * {
         font-size: 9pt !important;
     }
+
+    .card,
+    .card:hover {
+        box-shadow: none !important;
+        transform: none !important;
+        opacity: 1 !important;
+        border-radius: 0 !important;
+        background: #fff !important;
+        background-image: none !important;
+    }
+    .card::before,
+    .card::after {
+        display: none !important;
+        content: none !important;
+    }
+    #page {
+        background: #fff !important;
+        border-radius: 0 !important;
+        box-shadow: none !important;
+        background-image: none !important;
+    }
+}
+
+h4 {
+    font-size: 1.15rem;
+    font-weight: 600;
+    margin-top: 18px;
+    margin-bottom: 8px;
+    color: #1e293b;
 }
