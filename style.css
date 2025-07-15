@@ -797,11 +797,13 @@ button:focus {
         background: #fff !important;
         background-image: none !important;
     }
+
     .card::before,
     .card::after {
         display: none !important;
         content: none !important;
     }
+
     #page {
         background: #fff !important;
         border-radius: 0 !important;
